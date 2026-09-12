@@ -19,10 +19,18 @@
 
   <main>
     <section>
-      <h2>About me</h2>
-      <p>I am a student currently studying Information Systems and web technologies.</p>
-      <p>I focus on learning frontend structures, responsive media design, and semantic HTML standards.</p>
-    </section>
+  <h2>About Me</h2>
+  <figure>
+    <picture>
+      <!-- Serves a smaller square image on mobile screens -->
+      <source media="(max-width: 600px)" srcset="https://via.placeholder.com/400x400?text=Mobile+Image">
+      <!-- Default image for larger screens, with responsive CSS applied -->
+      <img src="https://via.placeholder.com/800x400?text=Desktop+Image" alt="Profile placeholder" style="max-width: 100%; height: auto; display: block;">
+    </picture>
+    <figcaption>A responsive image that adapts to the screen size.</figcaption>
+  </figure>
+  <p>I am a BSIS student at Carlos Hilado Memorial State University...</p>
+</section>
   </main>
 
   <footer>
