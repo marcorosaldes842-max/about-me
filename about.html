@@ -4,6 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Marco Rosaldes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Horizontal navigation bar */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    /* Responsive image container */
+    figure {
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    figcaption {
+      font-style: italic;
+      color: #666;
+      margin-top: 8px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -19,18 +53,16 @@
 
   <main>
     <section>
-  <h2>About Me</h2>
-  <figure>
-    <picture>
-      <!-- Serves a smaller square image on mobile screens -->
-      <source media="(max-width: 600px)" srcset="https://via.placeholder.com/400x400?text=Mobile+Image">
-      <!-- Default image for larger screens, with responsive CSS applied -->
-      <img src="https://via.placeholder.com/800x400?text=Desktop+Image" alt="Profile placeholder" style="max-width: 100%; height: auto; display: block;">
-    </picture>
-    <figcaption>A responsive image that adapts to the screen size.</figcaption>
-  </figure>
-  <p>I am a BSIS student at Carlos Hilado Memorial State University...</p>
-</section>
+      <h2>About Me</h2>
+      <figure>
+        <picture>
+          <source media="(max-width: 600px)" srcset="https://picsum.photos/400/300">
+          <img src="https://picsum.photos/800/400" alt="Profile photo" style="max-width: 100%; height: auto; display: block;">
+        </picture>
+        <figcaption>A responsive image that adapts to the screen size.</figcaption>
+      </figure>
+      <p>I am a BSIS student at Carlos Hilado Memorial State University...</p>
+    </section>
   </main>
 
   <footer>
